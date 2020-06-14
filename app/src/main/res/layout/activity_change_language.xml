@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.settings.ChangeLanguageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_lang"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/actionBarStatus"
+            android:elevation="0dp"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Light"
+            tools:ignore="UnusedAttribute" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/russianLang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/appBarLang"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_list"
+        android:drawableEnd="@drawable/flag_russian_federation"
+        android:drawableRight="@drawable/flag_russian_federation"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingEnd="22dp"
+        android:paddingRight="22dp"
+        android:text="@string/russ"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/kyrgyzLang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/russianLang"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/background_list"
+        android:drawableEnd="@drawable/flag_kyrgyzstan"
+        android:drawableRight="@drawable/flag_kyrgyzstan"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingEnd="22dp"
+        android:paddingRight="22dp"
+        android:text="@string/ky"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+</RelativeLayout>

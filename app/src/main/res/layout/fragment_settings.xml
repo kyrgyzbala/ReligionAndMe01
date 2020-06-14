@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.settings.SettingsFragment">
+
+    <TextView
+        android:id="@+id/chooseLanguage"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/background_list"
+        android:drawableEnd="@drawable/ic_arrow_forw"
+        android:drawableRight="@drawable/ic_arrow_forw"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="2dp"
+        android:text="@string/chooseLanguage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/chooseLanguage"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/background_list"
+        android:drawableEnd="@drawable/ic_arrow_forw"
+        android:drawableRight="@drawable/ic_arrow_forw"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="2dp"
+        android:text="@string/contacts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/contacts"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/background_list"
+        android:drawableEnd="@drawable/ic_arrow_forw"
+        android:drawableRight="@drawable/ic_arrow_forw"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="2dp"
+        android:text="@string/leaveReview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</RelativeLayout>

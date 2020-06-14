@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReligionAndMe01</string>
+
+    <string name="categories">Категориялар</string>
+    <string name="settings">Настройкалар</string>
+    <string name="questions">Суроолор</string>
+    <string name="quiz">Тесттер</string>
+    <string name="faq">FAQ</string>
+
+    <string name="chooseLanguage">Тилди тандоо</string>
+    <string name="contacts">Биз менен байланыш</string>
+    <string name="leaveReview">Пикир калтыруу</string>
+    <string name="russ">Русский язык</string>
+    <string name="ky">Кыргыз тили</string>
+    <string name="cancel">Баш тартуу</string>
+
+    <string name="changeLanguageMessage">Вы успешно поменяли язык приложения</string>
+
+</resources>

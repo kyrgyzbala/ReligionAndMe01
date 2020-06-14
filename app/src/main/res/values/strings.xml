@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ReligionAndMe01</string>
+
+    <string name="categories">Категории</string>
+    <string name="settings">Настройки</string>
+    <string name="questions">Вопросы</string>
+    <string name="quiz">Тесты</string>
+    <string name="faq">FAQ</string>
+    <string name="chooseLanguage">Выбрать язык</string>
+    <string name="contacts">Контакты</string>
+    <string name="leaveReview">Оставить отзыв</string>
+    <string name="russ">Русский язык</string>
+    <string name="ky">Кыргыз тили</string>
+    <string name="cancel">Отменить</string>
+
+    <string name="changeLanguageMessage">Вы успешно поменяли язык приложения</string>
+    <string name="askQuestion">Задать свой вопрос</string>
+</resources>
