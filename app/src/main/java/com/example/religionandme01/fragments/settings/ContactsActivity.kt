@@ -9,10 +9,11 @@ class ContactsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contacts)
-        setSupportActionBar(toolbar_contacts)
 
-        title = getString(R.string.contacts)
+        titleContacts.text = getString(R.string.contacts)
 
-
+        imgToolbarCont.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

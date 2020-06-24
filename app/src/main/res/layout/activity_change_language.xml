@@ -6,24 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".fragments.settings.ChangeLanguageActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <RelativeLayout
         android:id="@+id/appBarLang"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/actionBarStatus"
         android:fitsSystemWindows="true"
         app:elevation="0dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_lang"
+        <ImageView
+            android:id="@+id/imgToolbarLang"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/titleLang"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/actionBarStatus"
-            android:elevation="0dp"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Light"
-            tools:ignore="UnusedAttribute" />
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imgToolbarLang"
+            android:layout_toRightOf="@+id/imgToolbarLang"
+            android:gravity="center_vertical"
+            android:text="@string/chooseLanguage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="22sp" />
 
 
-    </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/russianLang"

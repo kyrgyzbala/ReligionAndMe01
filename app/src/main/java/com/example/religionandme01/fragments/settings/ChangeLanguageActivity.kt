@@ -18,16 +18,18 @@ class ChangeLanguageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_change_language)
-        setSupportActionBar(toolbar_lang)
 
-        title = getString(R.string.chooseLanguage)
+        titleLang.text = getString(R.string.chooseLanguage)
+        imgToolbarLang.setOnClickListener {
+            onBackPressed()
+        }
 
         val sharedPreferences = getSharedPreferences("Settings", Activity.MODE_PRIVATE)
         val language = sharedPreferences.getString("My_Lang", "")!!
         if (language == "ky") {
-            kyrgyzLang.setBackgroundColor(Color.parseColor("#6ff7c8"))
+            kyrgyzLang.setBackgroundColor(Color.parseColor("#5fb3a3"))
         } else {
-            russianLang.setBackgroundColor(Color.parseColor("#6ff7c8"))
+            russianLang.setBackgroundColor(Color.parseColor("#5fb3a3"))
         }
 
         russianLang.setOnClickListener {
@@ -53,11 +55,6 @@ class ChangeLanguageActivity : AppCompatActivity() {
         }
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-    }
 
     @Suppress("DEPRECATION")
     private fun setLocale(lang: String, code: Int) {
@@ -79,5 +76,10 @@ class ChangeLanguageActivity : AppCompatActivity() {
 
         if (code == 1)
             this.recreate()
+        val intent = Intent(this, MainActivity::class.java)
+        finish()
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        intent.putExtra("EXTRA_LANG", "11")
+        startActivity(intent)
     }
 }

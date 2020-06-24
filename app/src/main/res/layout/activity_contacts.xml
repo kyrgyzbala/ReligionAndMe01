@@ -6,22 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".fragments.settings.ContactsActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <RelativeLayout
         android:id="@+id/appBarContacts"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:fitsSystemWindows="true"
+        android:background="@color/actionBarStatus"
         app:elevation="0dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_contacts"
+        <ImageView
+            android:id="@+id/imgToolbarCont"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/titleContacts"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/actionBarStatus"
-            android:elevation="0dp"
-            android:theme="@style/ThemeOverlay.MaterialComponents.Light"
-            tools:ignore="UnusedAttribute" />
-    </com.google.android.material.appbar.AppBarLayout>
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imgToolbarCont"
+            android:layout_toRightOf="@+id/imgToolbarCont"
+            android:gravity="center_vertical"
+            android:text="@string/contacts"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="22sp" />
+    </RelativeLayout>
 
 
 </RelativeLayout>

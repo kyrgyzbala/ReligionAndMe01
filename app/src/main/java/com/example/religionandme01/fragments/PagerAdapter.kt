@@ -3,6 +3,7 @@ package com.example.religionandme01.fragments
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.religionandme01.fragments.ask.QuestionFragment
 import com.example.religionandme01.fragments.settings.SettingsFragment
 
 class PagerAdapter(fm: FragmentActivity) : FragmentStateAdapter(fm) {

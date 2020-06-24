@@ -9,8 +9,11 @@ class ReviewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_review)
-        setSupportActionBar(toolbar_review)
 
-        title = getString(R.string.leaveReview)
+        titleReview.text = getString(R.string.leaveReview)
+
+        imgToolbarRev.setOnClickListener {
+            onBackPressed()
+        }
     }
 }
